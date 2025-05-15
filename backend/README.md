@@ -31,12 +31,12 @@ uv run python -m pytest ./tests
 Build a docker image
 ```bash
 cd backend 
-docker build -f ./deployment/Dockerfile . -t task-manager:latest
+docker build -f ./deployment/Dockerfile . -t task-manager-backend:latest
 ```
 
 To run the docker image:
-```
-docker run -p 8000:8000 task-manager:latest
+```bash
+docker run -p 8000:8000 task-manager-backend:latest
 # Exposes docs on: http://localhost:8000/docs
 ```
 
