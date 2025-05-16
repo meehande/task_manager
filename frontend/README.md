@@ -52,6 +52,6 @@ docker build -f ./deployment/Dockerfile -t task-manager-frontend:latest .
 To run the docker image:
 ```bash
 docker run -p 80:80 task-manager-frontend:latest
-# Exposes docs on: http://localhost:8000/docs
+# Exposes frontend on: http://localhost
 ```
 

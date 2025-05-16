@@ -1,0 +1,20 @@
+services:
+  task-manager-backend:
+    build:
+      context: ./backend
+      dockerfile: ./deployment/Dockerfile
+    ports:
+      - 8000:8000
+  task-manager-frontend:
+    build:
+      context: ./frontend
+      dockerfile: ./deployment/Dockerfile
+    ports:
+      - 80:80
+  postgres:
+    image: postgres:16.4
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - 5432:5432

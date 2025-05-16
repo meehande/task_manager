@@ -9,10 +9,19 @@ This is a full-stack web application that allows users to manage and execute "ta
 
 ### Instructions
 
-In order to run the application, you will need to run the backend and frontend services. The frontend is configured to point to the backend running locally as is. Both can be run directly with python (backend) or npm (frontend), or a docker image can be built and docker used to run them.
+In order to run the application, you will need to run the backend and frontend services, and a local postgres instance. The frontend is configured to point to the backend running locally as is. Both can be run directly with python (backend) or npm (frontend), or a docker image can be built and docker used to run them.
 
+For convenience, a docker-compose is included to run backend, frontend, database together:
+```bash
+docker-compose up -d --build
+```
 
-Instructions on setting up and running the backend are available [here](./backend/README.md).
+To set up the database tables, there is a script that can be run with:
+```
 
-Instructions on setting up and running the frontend are available [here](./frontend/README.md)
+```
+
+Instructions on setting up and running the backend service are available [here](./backend/README.md).
+
+Instructions on setting up and running the frontend are available [here](./frontend/README.md).
 
